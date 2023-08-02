@@ -1,0 +1,45 @@
+.shopCart {
+  position: fixed;
+  top: 50%; /* Перемещаем верхний край элемента на 50% высоты контейнера */
+  left: 50%; /* Перемещаем левый край элемента на 50% ширины контейнера */
+  transform: translate(-50%, -50%);
+  border: 2px solid;
+  min-height: 40vh;
+  width: 30vw;
+  background: #bbbbbb;
+  border-radius: 6px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title {
+  text-align: center;
+  font-size: xx-large;
+  font-weight: 600;
+  padding: 10px;
+}
+
+.name {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.li {
+  display: flex;
+  justify-content: space-between;
+  font-size: x-large;
+}
+
+.price {
+  color: green;
+}
+
+.ul {
+  flex: 1;
+}
+
+.delete {
+  font-size: x-large;
+}

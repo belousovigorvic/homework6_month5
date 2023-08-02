@@ -1,8 +1,11 @@
 import React from 'react'
 import classes from './Navigation.module.css'
 import {BsCart4} from '../../../node_modules/react-icons/bs'
+import { useSelector } from 'react-redux'
 
-const Navigation = () => {
+const Navigation = ({handleClick}) => {
+  const state = useSelector(state => state.cart)
+
   return (
     <nav className={classes.nav}>
       <ul className={classes.nav__ul}>
@@ -21,9 +24,9 @@ const Navigation = () => {
         <li className={classes.nav__li}>
           Contact
         </li>
-        <li className={classes.nav__cart}>
+        <li className={classes.nav__cart} onClick={handleClick}>
           <BsCart4/>
-          <span className={classes.counter}>0</span>
+          <span className={classes.counter}>{state.length}</span>
         </li>
       </ul>
     </nav>
