@@ -1,0 +1,22 @@
+.nav__ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+}
+
+.nav__li {
+  font-size: xx-large;
+}
+
+.nav__cart {
+  font-size: xx-large;
+  position: relative;
+}
+
+.counter {
+  position: absolute;
+  top: 10px;
+  left: 30px;
+  color: red;
+}

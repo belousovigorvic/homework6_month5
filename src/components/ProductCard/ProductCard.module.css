@@ -1,0 +1,39 @@
+.product {
+  width: 350px;
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+  margin: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product__name {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: larger;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.product__description {
+  padding: 20px;
+  flex: 1;
+}
+
+.product__price {
+  padding: 20px;
+  color: green;
+  font-size: larger;
+}
+
+.product__btn {
+  border-radius: 5px;
+  padding: 5px;
+  margin: 20px;
+  border: 2px solid;
+}
+
+.product__bottom {
+  display: flex;
+  justify-content: space-between;
+}
